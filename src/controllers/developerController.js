@@ -8,7 +8,7 @@ const createdevelopers= async function (req, res) {
 }
 
 const scholarship= async function (req, res) {
-    const female= await bookModel.find({gender:'female',percentage:{$gte:70}
+    const female= await batchModel.find({gender:'female',percentage:{$gte:70}
 
     })
     res.send({msg:female})
